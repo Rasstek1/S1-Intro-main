@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Liste interactive de cadeaux de Noël</title>
-  <meta name="description" content="Créer votre liste de cadeaux et envoyez-là à vos ami.e.s">
-  <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Liste interactive de cadeaux de Noël</title>
+    <meta name="description" content="Créer votre liste de cadeaux et envoyez-là à vos ami.e.s">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script><!--Liens Javascript-->
 </head>
 <body>
 
 
 <div class="header">
 
-  <div class="container">
-    <div class="nav">
+    <div class="container">
+        <div class="nav">
 
-      <a href="#">L'Atelier&nbspdu&nbspbonheur&nbspMercantile</a>
-      <a href="#">Ma&nbspliste</a>
-      <a href="#">Listes&nbspde&nbspmes&nbspami.e.s</a>
+            <a href="#">L'Atelier&nbspdu&nbspbonheur&nbspMercantile</a>
+            <a href="#">Ma&nbspliste</a>
+            <a href="#">Listes&nbspde&nbspmes&nbspami.e.s</a>
 
 
+        </div>
     </div>
-  </div>
 </div>
 <div class="container flex">
-  <div class="gauche">
-    <h1>Liste de cadeaux interactive de Martin</h1>
-    <p class="text-muted ms-1 mb-3">Ajouter des items à votre liste de cadeaux souhaités puis envoyez votre liste à
-      vos
-      ami.e.s.</p>
-    <h2 class="mb-3">Ajouter un item à la liste</h2>
-    <div class="mb-3">
-      <p>Description :</p>
-      <input type="text" id="desc" name="essai" required></input>
-    </div>
-    <div class="mb-4">
-      <span>Valeur estimée ($) :</span><br>
-      <input type="number" id="valeur">
-    </div>
-    <div class="buttonleft">
-      <button>Ajouter</button>
-      <br>
-      <button>Annuler</button>
-    </div>
-  </div>
-
-  <div class="droite">
-
-    <h2>Ma liste</h2>
-    <div class="list">
-      <p>Crocs des fêtes : <span>14$</span></p>
-      <p>Une tuque des fêtes :<span>42$</span></p>
-      <p>Un chandail laid des fêtes :<span>25$</span></p>
-    </div>
-    <div class="total">
-      <p>Total: 81$</p>
-    </div>
-    <div class="destinataire">
-      <p>Destinataire:</p>
-      <input id="email" type="text">
-      <div>
-      </div>
-      <div class="buttonright">
-        <div>
-          <button>Confirmer et envoyer</button>
+    <div class="gauche">
+        <h1>Liste de cadeaux interactive de Martin</h1>
+        <p class="text-muted ms-1 mb-3">Ajouter des items à votre liste de cadeaux souhaités puis envoyez votre liste à
+            vos
+            ami.e.s.</p>
+        <h2 class="mb-3">Ajouter un item à la liste</h2>
+        <div class="mb-3">
+            <p>Description :</p>
+            <input type="text" id="desc" name="essai" required></input>
         </div>
-        <div>
-          <button>Recommencer</button>
+        <div class="mb-4">
+            <span>Valeur estimée ($) :</span><br>
+            <input type="number" id="valeur">
+        </div>
+        <div class="buttonleft">
+            <button onclick ="ajouter()">Ajouter</button><!--cliquer su le bouton va appeler la fonction ajouter-->
+            <br>
+            <button>Annuler</button>
+        </div>
+    </div>
+
+    <div class="droite">
+
+        <h2>Ma liste</h2>
+        <div class="list" id="maListe">
+            <p>Crocs des fêtes : <span>14$</span></p>
+            <p>Une tuque des fêtes :<span>42$</span></p>
+            <p>Un chandail laid des fêtes :<span>25$</span></p>
+        </div>
+        <div class="total">
+            <p>Total: 81$</p>
+        </div>
+
+        <div class="destinataire">
+            <p>Destinataire:</p>
+            <input id="email" type="text">
 
         </div>
-      </div>
+
+
+
+            <div class="buttonright">
+
+                    <button>Confirmer et envoyer</button>
+
+
+                    <button>Recommencer</button>
+
+
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 </body>
 </html>

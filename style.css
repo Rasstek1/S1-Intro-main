@@ -21,11 +21,11 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #000000 /*couleur texte du site*/
+    color: #000000
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-weight:500;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
 }
 
 .flex {
@@ -53,6 +53,7 @@ h1,h2,h3,h4,h5,h6{
     height: 50px;
 
 }
+
 .header a {
     text-decoration: none;
     color: black;
@@ -105,16 +106,18 @@ h1, h2 {
     width: 600px;
     height: 30px;
 }
-.gauche button:hover{
-    color:green;
-    border:solid green 1px;
+
+.gauche button:hover {
+    color: green;
+    border: solid green 1px;
 }
+
 .droite {
     width: 700px;
 
 }
 
-.list{
+.list {
     width: 600px;
 }
 
@@ -122,25 +125,49 @@ h1, h2 {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-
-    padding:10px;
+    padding: 10px;
 }
-.list span{
+
+
+.list span {
     background-color: green;
     float: right;
-    color:white;
-    border-radius: 4px;
+    color: white;
+    border-radius: 8px;
+    padding: 0 10px;
 }
-.total p{
 
-    float:right;
+.total p {
+
+    float: right;
 
 }
-#email{
+
+#email {
     width: 300px;
     height: 30px;
 }
-buttonright {
-    display: flex;
 
+.destinataire {
+    display: flex;
+    padding-top: 50px;
+}
+
+.buttonright {
+    padding-top: 80px;
+
+    text-align: end;
+
+}
+.buttonright button{
+    height:40px;
+    width:150px;
+    background:white;
+    border-radius:4px;
+
+
+}
+.destinataire input{
+
+    text-align: end;
 }
