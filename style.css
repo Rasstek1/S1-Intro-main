@@ -137,6 +137,9 @@ h1, h2 {
     padding: 0 10px;
 }
 
+.total{
+    height:40px;
+}
 .total p {
 
     float: right;
@@ -150,11 +153,15 @@ h1, h2 {
 
 .destinataire {
     display: flex;
-    padding-top: 50px;
+    height: 40px;
+
+}
+.destinataire p{
+    padding-right: 220px;
 }
 
 .buttonright {
-    padding-top: 80px;
+    padding-top: 45px;
 
     text-align: end;
 
@@ -166,8 +173,10 @@ h1, h2 {
     border-radius:4px;
 
 
-}
-.destinataire input{
 
-    text-align: end;
+.title{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
 }
+

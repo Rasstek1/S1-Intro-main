@@ -7,8 +7,11 @@
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script><!--Liens Javascript-->
+
 </head>
 <body>
+
+
 
 
 <div class="header">
@@ -24,7 +27,61 @@
         </div>
     </div>
 </div>
+
+<form action="">
+    <input type="text" value="" id="IdText" size="50"/>
+    <input type="button" value="Envoyer" onclick="afficher()" />
+    <div id="IdDiv">
+    </div>
+</form>
+
+<!--<script language="javascript">
+    var time = new Date().getHours();
+    if (time < 20) {
+        saluer = "Bonne journée";
+    } else {
+        saluer = "Bonne soirée";
+        alert(saluer);
+    }
+</script>
+
+<script language="javascript">
+    var a= window.prompt("Entrez un premier entier :","");
+    var b= window.prompt("Entrez un deuxième entier :","");
+    var c= window.prompt("Entrez un troisième entier :","");
+
+    if (Number(a)>Number(b))
+    {
+        m=a;
+    }else
+    {
+        m=b;
+    }
+    if (Number(c)>Number(m))
+    {
+        m=c;
+    }
+
+    alert("le maximum de "+a +" , "+b +" et "+c +" est = "+m);
+
+</script>-->
+
+<script src="script.js">
+<div id="time"></div>
+</script>
+
+<div class="title container">
+    <h1>Martin Gifts Shop!</h1>
+    <div id="content">
+        <div id="title">Offre Spéciale</div>
+        <div id="note">Abonnez-vous pour recevoir des offres!</div>
+    </div>
+    <script src="script.js"></script>
+</div>
+
+
 <div class="container flex">
+
     <div class="gauche">
         <h1>Liste de cadeaux interactive de Martin</h1>
         <p class="text-muted ms-1 mb-3">Ajouter des items à votre liste de cadeaux souhaités puis envoyez votre liste à
@@ -40,7 +97,7 @@
             <input type="number" id="valeur">
         </div>
         <div class="buttonleft">
-            <button onclick ="ajouter()">Ajouter</button><!--cliquer su le bouton va appeler la fonction ajouter-->
+            <button onclick="ajouter()">Ajouter</button><!--cliquer su le bouton va appeler la fonction ajouter-->
             <br>
             <button>Annuler</button>
         </div>
@@ -65,18 +122,51 @@
         </div>
 
 
+        <div class="buttonright">
 
-            <div class="buttonright">
-
-                    <button>Confirmer et envoyer</button>
-
-
-                    <button>Recommencer</button>
+            <button>Confirmer et envoyer</button>
 
 
-            </div>
+            <button>Recommencer</button>
+
+
         </div>
     </div>
 </div>
+</div>
+
+<form name="selectForm">
+    <p>
+        <label for="typesMusique">Veuillez choisir des genres musicaux, puis cliquez :</label>
+        <select id="typesMusique" name="typesMusique" multiple="multiple">
+            <option selected="selected">R&B</option>
+            <option>Jazz</option>
+            <option>Blues</option>
+            <option>New Age</option>
+            <option>Classique</option>
+            <option>Opera</option>
+        </select>
+    </p>
+
+    <p><button id="btn" type="button">Combien sont sélectionnés ?</button></p>
+
+    <h2>JavaScript Math.random mon chum!()</h2>
+
+    <p>Every time you click the button, getRndInteger(min, max) returns a random number between 1 and 10 (both included):</p>
+
+    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">Click Me</button>
+
+    <p id="demo"></p>
+
+</form>
+
+<script>
+    var emp=["Martin","Pedro","Ginette"];
+    for (i=0;i<emp.length;i++){
+        document.write(emp[i] + "<br/>");
+    }
+</script>
+
+<input type="button" onclick="msg()" value="appel fonction"/>
 </body>
 </html>
