@@ -24,8 +24,8 @@ body {
     color: #000000 /*couleur texte du site*/
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-weight:500;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
 }
 
 .flex {
@@ -53,6 +53,7 @@ h1,h2,h3,h4,h5,h6{
     height: 50px;
 
 }
+
 .header a {
     text-decoration: none;
     color: black;
@@ -95,23 +96,26 @@ h1, h2 {
 
 .buttonleft button {
     margin-bottom: 5px;
-    background-color: white ;
+    background-color: white;
 }
 
 .gauche button {
     width: 600px;
     height: 30px;
 }
-.gauche button:hover{
-    color:green;
-    border:solid green 1px;
+
+.gauche button:hover {
+    color: green;
+    border: solid green 1px;
 }
+
 .droite {
     width: 700px;
 
 
 }
-.list{
+
+.list {
     width: 600px;
 }
 
@@ -119,19 +123,23 @@ h1, h2 {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-
-    padding:10px;
+    border-radius: 5px;
+    padding: 10px;
 }
-.list span{
+
+.list span {
     background-color: green;
     float: right;
-    color:white;
+    color: white;
 }
-.total p{
 
-    float:right;
+#total p {
+
+    float: right;
 
 }
-#email{
+
+#email {
     width: 300px;
-    height: 30px;}
+    height: 30px;
+}

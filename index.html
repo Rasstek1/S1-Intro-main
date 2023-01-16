@@ -40,7 +40,7 @@
             <input type="number" id="valeur">
         </div>
         <div class="buttonleft">
-            <button>Ajouter</button>
+            <button onclick = "ajouter()">Ajouter</button>
             <br>
             <button>Annuler</button>
         </div>
@@ -49,14 +49,14 @@
     <div class="droite">
 
         <h2>Ma liste</h2>
-        <div class="list">
+        <div class="list" id="maListe">
             <p>Crocs des fêtes : <span>14$</span></p>
             <p>Une tuque des fêtes :<span>42$</span></p>
             <p>Un chandail laid des fêtes :<span>25$</span></p>
         </div>
-        <div class="total">
-            <p>Total: 81$</p>
-        </div>
+        <p>Total : <span id ="total">81</span>$</p>
+
+
         <div class="destinataire">
             <p>Destinataire:</p>
             <input id="email" type="text">
