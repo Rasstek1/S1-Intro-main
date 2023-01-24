@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-    background-color: lightcyan;
+    background-color: rgb(11, 250, 250);
     height: 50px;
 
 }
@@ -94,19 +94,21 @@ h1, h2 {
 
 }
 
-.buttonleft button {
+.buttonleft input {
     margin-bottom: 5px;
-    background-color: white;
+    background-color: rgb(65, 47, 233);
+    color:white;
 }
 
-.gauche button {
+.gauche input {
     width: 600px;
     height: 30px;
 }
 
-.gauche button:hover {
-    color: green;
+.gauche input:hover {
+    color:rgb(20, 24, 24);
     border: solid green 1px;
+    background-color: chartreuse;
 }
 
 .droite {
